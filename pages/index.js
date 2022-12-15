@@ -4,6 +4,7 @@ import Date from '../components/date';
 import Layout from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 
+// 静的プロパティを取得する非同期関数
 export async function getStaticProps() {
     const allPostsData = getSortedPostsData();
     return {
