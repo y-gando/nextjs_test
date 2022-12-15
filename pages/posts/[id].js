@@ -14,14 +14,14 @@ export async function getStaticProps({ params }) {
   };
 }
 
-// // 静的なパスを取得する非同期関数
-// export async function getStaticPaths() {
-//   const paths = getAllPostIds();
-//   return {
-//     paths,
-//     fallback: false,
-//   };
-// }
+// 静的なパスを取得する非同期関数
+export async function getStaticPaths() {
+  const paths = getAllPostIds();
+  return {
+    paths,
+    fallback: false,
+  };
+}
 
 export default function Post({ postData }) {
   return (
